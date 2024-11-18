@@ -21,13 +21,7 @@ class MappingCamera(Camera):
     between objects.
     """
 
-    def __init__(
-        self,
-        mapping_func=lambda p: p,
-        min_num_curves=50,
-        allow_object_intrusion=False,
-        **kwargs,
-    ):
+    def __init__(self, mapping_func=lambda p: p, min_num_curves=50, allow_object_intrusion=False, **kwargs,):
         self.mapping_func = mapping_func
         self.min_num_curves = min_num_curves
         self.allow_object_intrusion = allow_object_intrusion
